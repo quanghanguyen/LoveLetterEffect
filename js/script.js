@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "did_open": false
     }
 
-    const heart = document.querySelector("#solid-heart");
+    const heart = document.querySelector("#flower-icon");
     
     const msg_container = document.querySelector("#message-container");
     

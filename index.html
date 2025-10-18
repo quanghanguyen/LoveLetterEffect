@@ -1,14 +1,19 @@
-<!--
-
-    ©️ 2023 upio
-
-    written by upio inspired by a tiktok video 
-
-    UPDATE:
-    - old code was trash so i am rewriting for fun
--->
-
 <!DOCTYPE html>
+<style>
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+}
+
+.animate-beat {
+  animation: beat 1s infinite ease-in-out;
+}
+</style>
+
 <html>
     <head>
         <title>Tiktok Love Letter Effect by upio</title>
@@ -54,7 +59,7 @@
             </div>
 
             <div class="heart-container" class="mt-2">
-                <i id="solid-heart" class="fa-solid fa-heart fa-beat fa-2x" style="color: #ff0000;"></i>
+                <div id="flower-icon" class="text-6xl animate-beat select-none">🌷</div>
             </div>
         </div>
     </body>
