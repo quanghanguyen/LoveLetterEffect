@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const heart = document.querySelector("#flower-icon");
-    
+    const music = document.querySelector("#bg-music");
+
     const msg_container = document.querySelector("#message-container");
     
     const md = window.markdownit({html: true});
@@ -49,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
         tempdata.did_open = true;
+
+        music.play();
         
         msg_container.classList.remove("hidden");
         msg_container.classList.add("flex");
